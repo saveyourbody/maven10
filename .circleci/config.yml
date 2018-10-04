@@ -33,7 +33,7 @@ jobs:
     steps:
       - run: sudo apt-get update
       - run: sudo apt-get install sshpass
-      - run: sshpass -p "123456" ssh user@202.183.247.176 -v 'cmd /c cd deploy/maven10/maven10 && git pull'
+      - run: sshpass -p "123456" ssh user@202.183.247.176 -v 'cmd /c cd deploy/maven && git clone https://github.com/saveyourbody/maven10'
 
 workflows:
   version: 2
